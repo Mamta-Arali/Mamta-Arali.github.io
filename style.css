@@ -1,0 +1,189 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#020617;
+padding:15px 10%;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#020617,#0f172a);
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#38bdf8;
+color:black;
+font-weight:600;
+cursor:pointer;
+border-radius:30px;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
+
+.about-list{
+list-style:disc;
+text-align:left;
+max-width:500px;
+margin:20px auto;
+line-height:1.8;
+}
+
+.projects{
+padding:100px 10%;
+text-align:center;
+}
+
+.project-container{
+display:flex;
+gap:30px;
+margin-top:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#38bdf8;
+color:black;
+}
+
+.contact{
+padding:100px 10%;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#38bdf8;
+font-weight:600;
+cursor:pointer;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+.project-container{
+flex-direction:column;
+align-items:center;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+
+.achievements{
+padding:100px 10%;
+text-align:center;
+}
+
+.achievement-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.achievement-container img{
+width:200px;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+transition:0.3s;
+}
+
+.achievement-container img:hover{
+transform:scale(1.05);
+}
